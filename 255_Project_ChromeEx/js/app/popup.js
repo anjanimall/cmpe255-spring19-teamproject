@@ -15,7 +15,7 @@ myApp.controller("PopupCtrl", ['$scope', '$http', function($scope, $http){
    console.log("selectedText: " + selectedText);
    if(selectedText.length > 0) {
      $http({
-          url: 'https://language.googleapis.com/v1/documents:analyzeSentiment?key=AIzaSyBQRSW4YO-ya2aLcJLZQTz2809xE9jxUVE',
+          url: 'https://language.googleapis.com/v1/documents:analyzeSentiment?key=YOUR_KEY',
           method: "POST",
           data: {
             "encodingType": "UTF8",
