@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="my-app">
+  <head>
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/app/popup.js"></script>
+  </head>
+  <body>
+    <div ng-controller="PopupCtrl">
+        <div class="outer-container">
+          <div class="align-center"><h1>Toxicity Analysis</h1></div>
+
+          <p class="align-center" ng-style="neutralStyle">Neutral</p>
+          <div class="sentiment-container">
+            <div class="sentiment-item-panels">
+              <div class="sentiment-toxic" ng-style="toxicWidth">
+                <div class="sentiment-perc" ng-if="toxicPercentage > 15">
+                  <div class="sentiment-perc-text">{{toxicPercentage}}%</div>
+                </div>
+              </div>
+            </div>
+            <div class="sentiment-item-neutral"></div>
+            <div class="sentiment-item-panels">
+              <div class="sentiment-harmless" ng-style="harmlessWidth">
+                <div class="sentiment-perc" ng-if="harmlessPercentage > 15">
+                  <div class="sentiment-perc-text">{{harmlessPercentage}}%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="harmless-toxic-container">
+            <div>Toxic</div>
+            <div>Harmless</div>
+          </div>
+        </div>
+    </div>
+  </body>
+</html>
