@@ -4,7 +4,7 @@ CMPE 255 DATA MINING\
 **Group Members:**\
 &nbsp;&nbsp; Krishna Priya Gajula\
 &nbsp;&nbsp; Archana Yadawa\
-&nbsp;&nbsp; Anjani Mallampati\
+&nbsp;&nbsp; Subhanjani Mallampati\
 &nbsp;&nbsp; Brian Hoang\
 \
 **Project Topic:** Toxic Comment Classification\
